@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    background: linear-gradient(to right,#fdda00, #b0b706, #6f940c);
+}
+.wrap {
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 5px gray;
+    margin: 100px auto;
+}
+.input {
+    width: 100%;
+    height: 60px;
+    padding: 5px 20px;
+    border-radius: 8px 8px 0 0;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background-color: white;
+}
+.list--task {
+    border-radius:  0 0 8px 8px;
+
+}
+.task {
+    background-color: #fff000;
+    width: 100%;
+    list-style-type: none;
+    padding: 5px 20px;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px gray outset;
+
+}
+.task:last-child {
+    border-radius:  0 0 8px 8px;
+    border-bottom: none;
+}
+.fa-square-check {
+    color: green;
+    cursor: pointer;
+}
+.fa-trash-can {
+    cursor: pointer;
+    color: red;
+}
+.active {
+    color: gray;
+    text-decoration-line: line-through;
+}
+.active .fa-square-check{
+    color: gray;
+}
